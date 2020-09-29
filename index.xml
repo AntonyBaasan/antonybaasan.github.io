@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Antony Baasan</title>
@@ -6,10 +6,15 @@
     <description>Recent content on Antony Baasan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2019 14:03:24 -0400</lastBuildDate>
-    
-	<atom:link href="https://antonybaasan.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 29 Sep 2020 14:50:05 -0400</lastBuildDate><atom:link href="https://antonybaasan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Circuit-Time Update 1</title>
+      <link>https://antonybaasan.github.io/blog/circuit-time-update-1/</link>
+      <pubDate>Tue, 29 Sep 2020 14:50:05 -0400</pubDate>
+      
+      <guid>https://antonybaasan.github.io/blog/circuit-time-update-1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Spring Boot Heroku Deployment</title>
@@ -27,9 +32,7 @@
       
       <guid>https://antonybaasan.github.io/blog/godzula-idea/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://github.com/AntonyBaasan/godzula&#34;&gt;https://github.com/AntonyBaasan/godzula&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;The Godzula is an open-source project that helps users to learn shortcuts. This project is very much inspired by one of my favorite web site ShortCutFoo.com. In the shortcutfoo you can learn shortcuts pretty much any popular tool out there.&lt;/p&gt;</description>
     </item>
     
