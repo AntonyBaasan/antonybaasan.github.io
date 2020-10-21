@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.75.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Deep Dive Asp.Net Mvc Part1 &middot; Antony Baasan</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://antonybaasan.github.io/"><h1>Antony Baasan</h1></a>
+      <p class="lead">
+      
+      Thoughts and lessons about software development.
+      
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://antonybaasan.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Deep Dive Asp.Net Mvc Part1</h1>
+  <time datetime=2020-10-20T23:25:25-0400 class="post-date">Tue, Oct 20, 2020</time>
+  <p>Recently I started exploring the Asp.Net source code. I will writing my finding in this Deep Dive Asp.Net Mvc series.</p>
+<p>Today we will prepare the source code, specifically download the source code, build and run a sandbox web application that comes with Asp.Net Mvc project. This is needed to follow the code examples from feature posts. The sandbox project allows us to debug and step into breakpoints.</p>
+<p>There is very detailed page for building the Asp.Net project from the source - <a href="https://github.com/dotnet/aspnetcore/blob/master/docs/BuildFromSource.md">https://github.com/dotnet/aspnetcore/&hellip;/BuildFromSource.md</a>. Quick and short form for this page would look like this:</p>
+<h3 id="step-1-clone-the-source-code">Step 1. Clone the source code</h3>
+<pre><code>git clone --recursive https://github.com/dotnet/aspnetcore
+</code></pre><h3 id="step-2-install-pre-requisites-win">Step 2. Install pre-requisites (Win)</h3>
+<ul>
+<li>Prepare Visual Studio
+this command makes sure Visual Studio will have all the required components for the development</li>
+</ul>
+<pre><code>PS&gt; ./eng/scripts/InstallVisualStudio.ps1  [-Edition {Enterprise|Community|Professional}] [-Channel {Release|Preview}]
+</code></pre><ul>
+<li>NodeJS</li>
+</ul>
+<pre><code>choco install nodejs
+</code></pre><ul>
+<li>Yarn</li>
+</ul>
+<pre><code>npm install -g yarn
+</code></pre><ul>
+<li>Install JDK</li>
+</ul>
+<p>Option 1: OpenJDK <a href="https://jdk.java.net/">here</a></p>
+<p>Option 2: Oracle&rsquo;s JDK <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a></p>
+<p>Option 3: or use script that comes with source code:</p>
+<pre><code>PS&gt; ./eng/scripts/InstallJdk.ps1
+</code></pre><h3 id="step-3-build-the-repo">Step 3. Build the repo</h3>
+<p>This CLI command from the root directory will restore and build solutions.</p>
+<pre><code>.\build.cmd
+</code></pre><h3 id="step-4-run-sandbox-application">Step 4. Run sandbox application</h3>
+<p>To open Asp.Net Mvc project in the Visual Studio:</p>
+<pre><code>.\startvs.cmd .\src\Mvc\Mvc.sln
+</code></pre><p><code>startvs.cmd script will setup environment variables needed for the VS to work with the source code.</code></p>
+<p>Set MvcSandbox project as default project:
+<img src="https://media.publit.io/file/antonbaasanblog/vs-asp-net-mvc-sandbox.png" alt="vs sandbox project"></p>
+<p>This should be good to run the project in the Debug more and explore the source code.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

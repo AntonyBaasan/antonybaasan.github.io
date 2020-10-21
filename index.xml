@@ -6,14 +6,16 @@
     <description>Recent content on Antony Baasan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2020 14:50:05 -0400</lastBuildDate><atom:link href="https://antonybaasan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 23:25:25 -0400</lastBuildDate><atom:link href="https://antonybaasan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Circuit-Timer Update 1</title>
-      <link>https://antonybaasan.github.io/blog/circuit-timer-update-1/</link>
-      <pubDate>Tue, 29 Sep 2020 14:50:05 -0400</pubDate>
+      <title>Deep Dive Asp.Net Mvc Part1</title>
+      <link>https://antonybaasan.github.io/blog/deep-dive-asp-net-part-1/</link>
+      <pubDate>Tue, 20 Oct 2020 23:25:25 -0400</pubDate>
       
-      <guid>https://antonybaasan.github.io/blog/circuit-timer-update-1/</guid>
-      <description></description>
+      <guid>https://antonybaasan.github.io/blog/deep-dive-asp-net-part-1/</guid>
+      <description>Recently I started exploring the Asp.Net source code. I will writing my finding in this Deep Dive Asp.Net Mvc series.
+Today we will prepare the source code, specifically download the source code, build and run a sandbox web application that comes with Asp.Net Mvc project. This is needed to follow the code examples from feature posts. The sandbox project allows us to debug and step into breakpoints.
+There is very detailed page for building the Asp.</description>
     </item>
     
     <item>
