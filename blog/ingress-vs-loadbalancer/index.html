@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.75.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kubernetes Ingress vs Load balancer &middot; Antony Baasan</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://antonybaasan.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://antonybaasan.github.io/"><h1>Antony Baasan</h1></a>
+      <p class="lead">
+      
+      Thoughts and lessons about software development.
+      
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://antonybaasan.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Kubernetes Ingress vs Load balancer</h1>
+  <time datetime=2020-12-13T15:37:49-0500 class="post-date">Sun, Dec 13, 2020</time>
+  <p>Kubernetes Ingeress and Load balancer are the main ways to expose access to applications inside a Kubernetes cluster.</p>
+<h3 id="span-stylecolor-28be06load-balancer-servicespan"><span style="color: #28BE06">Load Balancer service</span></h3>
+<p>The load balancer is type of service object among ClusterIP, NodePort and ExtrnalName. As obvious from the name, this type of service is responsible for directing external traffic to the backend Pods.
+Dendending on where we run a cluster, loadbalancer are provisioned. For example, Minikube doesn&rsquo;t support loadbalancer, but cloud providers provition new loadbalancer type of resources.</p>
+<p><a href="https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer">https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer</a></p>
+<h3 id="span-stylecolor-28be06ingressspan"><span style="color: #28BE06">Ingress</span></h3>
+<p>Ingress is responsible for routing outside traffic to internal services. In other to use Ingress, an Ingress Controller is required. There are many Ingress Controllers made by different folks (different capabilities).
+One very important note is, Ingress doesn&rsquo;t export other than HTTP and HTTPS protocols. For exposing service other than HTTP and HTTPS to the internet typically used Loadbalancer and NodePort services.</p>
+<p><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/">https://kubernetes.io/docs/concepts/services-networking/ingress/</a></p>
+<p><img oncontextmenu="return false;" src="https://media.publit.io/file/antonbaasanblog/k8s-ingress-vs-loadbalancer-1.jpg" alt="k8s ingress vs loadbalancer (1)" /></p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

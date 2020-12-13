@@ -6,7 +6,17 @@
     <description>Recent content in Blogs on Antony Baasan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2020 23:25:25 -0400</lastBuildDate><atom:link href="https://antonybaasan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 15:37:49 -0500</lastBuildDate><atom:link href="https://antonybaasan.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Ingress vs Load balancer</title>
+      <link>https://antonybaasan.github.io/blog/ingress-vs-loadbalancer/</link>
+      <pubDate>Sun, 13 Dec 2020 15:37:49 -0500</pubDate>
+      
+      <guid>https://antonybaasan.github.io/blog/ingress-vs-loadbalancer/</guid>
+      <description>Kubernetes Ingeress and Load balancer are the main ways to expose access to applications inside a Kubernetes cluster.
+Load Balancer service The load balancer is type of service object among ClusterIP, NodePort and ExtrnalName. As obvious from the name, this type of service is responsible for directing external traffic to the backend Pods. Dendending on where we run a cluster, loadbalancer are provisioned. For example, Minikube doesn&amp;rsquo;t support loadbalancer, but cloud providers provition new loadbalancer type of resources.</description>
+    </item>
+    
     <item>
       <title>Deep Dive Asp.Net Mvc Part1</title>
       <link>https://antonybaasan.github.io/blog/deep-dive-asp-net-part-1/</link>
